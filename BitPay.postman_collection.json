@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "097ad7a3-6e96-411b-8df3-58ed98cf6417",
+		"name": "BitPay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10335255"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "redirect",
+							"value": "http://127.0.0.1:8000/payment-result",
+							"type": "text"
+						},
+						{
+							"key": "api",
+							"value": "adxcv-zzadq-polkjsad-opp13opoz-1sdf455aadzmck1244567",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bitpay.ir/payment-test/gateway-send",
+					"protocol": "https",
+					"host": [
+						"bitpay",
+						"ir"
+					],
+					"path": [
+						"payment-test",
+						"gateway-send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_get",
+							"value": "31533",
+							"type": "text"
+						},
+						{
+							"key": "trans_id",
+							"value": "25633",
+							"type": "text"
+						},
+						{
+							"key": "api",
+							"value": "adxcv-zzadq-polkjsad-opp13opoz-1sdf455aadzmck1244567",
+							"type": "text"
+						},
+						{
+							"key": "json",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://bitpay.ir/payment-test/gateway-result-second",
+					"protocol": "https",
+					"host": [
+						"bitpay",
+						"ir"
+					],
+					"path": [
+						"payment-test",
+						"gateway-result-second"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
